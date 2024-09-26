@@ -1,21 +1,27 @@
-// Some Java CLASSES define OBJECTS
-//These classes are like blueprints or templates
-// You can create OBJECTS fro a CLASS like this
-// OBJECTS are INSTANCES of a certain class
-public class Creature {
-   // Instance Variables
-   //every Creature has certain attributes
-   String species;
-   double weight ;
-   int numLegs;
-   boolean canPet;
+import java.util.Scanner; // import the Scanner class
 
-   //Methods
-   // every Creature has certain behaviors
-   public void move(){
+public class Main{
 
-   }
-   public void play(){
+public static void main (String []args) {
+   System.out.println("Testing methods that RETURN values...");
 
+   // Construct a Scanner object
+   // note: System.in() is the computer's keyboard!
+   Scanner scan = new Scanner(System.in);
+
+   // Take input with the Scanner methods
+   System.out.println("Enter some text: ");
+   String inputStr = scan.nextLine();
+   System.out.println("Enter a whole number: ");
+   int inputInt = scan.nextInt();
+   System.out.println("Enter a decimal.number: ");
+   double inputDouble = scan.nextDouble();
+
+   // Handle the user input (do something with the values)
+   // Use athe value in a print statement
+   System.out.prinln("You entered: " + inputStr);
+   // Use values in an expression
+   in sum = inputInt + inputDouble;
+   
    }
 }
